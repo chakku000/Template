@@ -25,7 +25,7 @@ typedef pair<int,int> pii;
 typedef vector<int> vi;
 typedef vector<vi> vvi;
 ll gcd(ll a,ll b){ if(b==0) return a; else return gcd(b,a%b); }
- 
+constexpr double eps = 1e-14; 
 constexpr ll mod = 1e9+7;
 const int dx[]={1,0,-1,0} ,dy[] = {0,1,0,-1};
 /*}}}*/
