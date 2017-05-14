@@ -1,16 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 /*{{{*/  //template
-#define REP(i,n) for(int i=0;i<n;i++)
 #define rep(i,n) for(int i=0;i<n;i++)
 #define INF 1<<29
 #define LINF LLONG_MAX/3
-#define MP make_pair
-#define PB push_back
+#define mp make_pair
 #define pb push_back
 #define EB emplace_back
-#define ALL(v) (v).begin(),(v).end()
-#define all(v) ALL(v)
+#define fi first
+#define se second
+#define all(v) (v).begin(),(v).end()
 #define sz(x) (int)(x).size()
 #define debug(x) cerr<<#x<<":"<<x<<endl
 #define debug2(x,y) cerr<<#x<<","<<#y":"<<x<<","<<y<<endl
