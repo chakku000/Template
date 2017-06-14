@@ -2,11 +2,11 @@
 using namespace std;
 /*{{{*/  //template
 #define rep(i,n) for(int i=0;i<n;i++)
-#define INF 1<<29
-#define LINF LLONG_MAX/3
+constexpr int INF = numeric_limits<int>::max()/2;
+constexpr long long LINF = numeric_limits<long long>::max()/3;
 #define mp make_pair
 #define pb push_back
-#define EB emplace_back
+#define eb emplace_back
 #define fi first
 #define se second
 #define all(v) (v).begin(),(v).end()
