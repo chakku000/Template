@@ -18,6 +18,9 @@ struct Double{ double d; explicit Double(double x) : d(x){} };
 ostream& operator<<(ostream& os,const Double x){ os << fixed << setprecision(20) << x.d; return os; }
 template<typename T> ostream& operator<<(ostream& os,const vector<T>& vec){ os << "["; for(const auto& v : vec){ os << v << ","; } os << "]"; return os; }
 template<typename T,typename U> ostream& operator<<(ostream& os,const pair<T,U>& p){ os << "(" << p.first << ","<< p.second <<")"; return os; }
+template<typename T> ostream& operator<<(ostream& os,const set<T>& st){ os<<"{"; for(T v:st) os<<v<<","; os <<"}"; return os; }
+template<typename T,typename U> inline void chmax(T &x,U y){ if(y>x) x = y; }
+template<typename T,typename U> inline void chmin(T &x,U y){ if(y<x) x = y; }
 typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int,int> pii;
