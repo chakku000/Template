@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 /*{{{*/  //template
-#define rep(i,n) for(int i=0;i<n;i++)
+#define rep(i,n) for(int i=0;i<(int)(n);i++)
 constexpr int INF = numeric_limits<int>::max()/2;
 constexpr long long LINF = numeric_limits<long long>::max()/3;
 #define mp make_pair

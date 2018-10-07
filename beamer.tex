@@ -1,0 +1,51 @@
+% beamer用テンプレート
+\documentclass[dvipdfmx]{beamer}
+
+% 数式フォント
+\renewcommand{\familydefault}{\sfdefault}
+
+% 日本語をゴシック体に
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\usepackage[deluxe, expert]{otf}
+\usepackage{minijs}  %min10
+
+% コード挿入用
+\usepackage{listings,jlisting}
+
+% そのままだと栞の日本語が文字化けする
+\usepackage{atbegshi}
+\ifnum 42146=\euc"A4A2
+\AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+\else
+\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+\fi
+
+% マクロ
+\vspace{1in}
+\newcommand{\nw}{\vspace{\baselineskip}}        % 空行挿入 \nw
+
+% テーマ設定
+\usetheme{Antibes}
+
+% スライド設定
+\setbeamertemplate{navigation symbols}{}    % ナビゲーションを消す
+\setbeamertemplate{footline}[frame number]  % スライド番号
+
+% スライド情報
+\title{}
+\subtitle{}
+\author{}
+
+\begin{document}
+
+% 表紙
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
+
+% 目次
+%\begin{frame}{}
+%    \tableofcontents
+%\end{frame}
+
+\end{document}
